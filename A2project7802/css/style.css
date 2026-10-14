@@ -1,16 +1,73 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+    font-family: 'Prompt', sans-serif;
+    background-color: #fcf9f5;
+    color: #131211;
+    line-height: 1.7;
 }
 
-section {
-    border-radius: 8px;
+
+.bg-warm-dark {
+    background-color: #3e2723;
 }
+
+
+.hero-section {
+    background: linear-gradient(135deg, #4e342e 0%, #8d6e63 100%);
+    box-shadow: 0 4px 20px rgba(78, 52, 46, 0.15);
+}
+
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 4px solid #f5ede6;
+}
+
+
+.section-title {
+    color: #3e2723;
+    border-left: 4px solid #a1887f;
+    padding-left: 0.75rem;
+}
+
 
 .card {
-    transition: transform 0.2s;
+    background: #ffffff;
+    border: 1px solid #efebe9 !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(78, 52, 46, 0.08) !important;
+}
+
+
+.reflection-box {
+    background-color: #f7f3f0 !important;
+    border-left: 3px solid #bcaaa4;
+}
+
+
+.badge-warm-primary {
+    background-color: #efebe9;
+    color: #5d4037;
+}
+
+.badge-warm-success {
+    background-color: #f1f8e9;
+    color: #33691e;
+}
+
+
+.btn-warm-outline {
+    color: #5d4037;
+    border-color: #bcaaa4;
+}
+
+.btn-warm-outline:hover {
+    background-color: #5d4037;
+    color: #ffffff;
+    border-color: #5d4037;
 }

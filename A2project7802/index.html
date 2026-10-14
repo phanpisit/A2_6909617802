@@ -7,102 +7,116 @@
     <title>My Responsive Learning Portfolio - A2</title>
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Prompt -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-light">
+<body>
 
-    <!-- Header / Navbar -->
-    <header class="bg-dark text-white text-center py-5">
+    <!-- Navbar Header -->
+    <nav class="navbar navbar-dark bg-warm-dark shadow-sm py-3">
         <div class="container">
-            <h1 class="display-5 fw-bold">My Learning Portfolio</h1>
-            <p class="lead">พันธุ์พิศิษฐ์ ศิริขันแสง (รหัส 6909617802)</p>
+            <span class="navbar-brand fw-bold fs-5">☕ My Learning Portfolio</span>
+            <span class="text-light opacity-75 small">CS100 • รหัส 6909617802</span>
+        </div>
+    </nav>
+
+    <!-- Hero Header Section -->
+    <header class="hero-section text-white text-center py-5 mb-5">
+        <div class="container py-4">
+            <h1 class="display-5 fw-bold mb-2">Individual Portfolio</h1>
+            <p class="lead opacity-90 mb-0">เว็บไซต์สะสมผลงาน การเรียนรู้ และพัฒนาการทางเทคโนโลยี</p>
         </div>
     </header>
 
-    <main class="container my-5">
+    <!-- Main Content -->
+    <main class="container mb-5">
+
         <!-- Section 1: About Me -->
-        <section id="about-me" class="mb-5 bg-white p-4 rounded shadow-sm">
-            <h2 class="h4 text-primary border-bottom pb-2 mb-3">About Me</h2>
-            <div class="row align-items-center">
-                <div class="col-md-3 text-center mb-3 mb-md-0">
-                    <img src="media/profile.jpg" alt="Profile" class="img-fluid rounded-circle border"
-                        style="width: 130px; height: 130px; object-fit: cover;">
+        <section id="about-me" class="content-card mb-5 p-4 p-md-5 bg-white rounded-4 shadow-sm border-0">
+            <h2 class="section-title h4 fw-bold mb-4">About Me</h2>
+            <div class="row align-items-center g-4">
+                <div class="col-md-3 text-center">
+                    <img src="media/profile.jpg" alt="Profile" class="profile-img rounded-circle shadow-sm">
                 </div>
                 <div class="col-md-9">
-                    <p><strong>ชื่อ-นามสกุล:</strong> พันธุ์พิศิษฐ์ ศิริขันแสง</p>
-                    <p><strong>รหัสดักศึกษา:</strong> 6909617802</p>
-                    <p><strong>หลักสูตร / สาขาวิชา:</strong> วิทยาการคอมพิวเตอร์ / เทคโนโลยีสารสนเทศ (ปรับแก้ตามจริง)
-                    </p>
-                    <p><strong>ความสนใจ:</strong> การพัฒนาเว็บไซต์ด้วย HTML, CSS, Bootstrap และการเขียนโปรแกรมเบื้องต้น
-                    </p>
+                    <h3 class="h4 fw-bold text-dark mb-2">พันธุ์พิศิษฐ์ ศิริขันแสง</h3>
+                    <p class="text-muted mb-3"><strong>รหัสดักศึกษา:</strong> 6909617802 | <strong>สาขาวิชา:</strong>
+                        วิทยาการคอมพิวเตอร์</p>
+                    <p class="text-secondary mb-0">สวัสดีครับ งานชิ้นนี้พัฒนาขึ้นเพื่อฝึกฝนทักษะ Responsive Web
+                        Design ด้วย HTML, CSS และ Bootstrap
+                        โดยมุ่งเน้นการจัดโครงสร้างโค้ดที่เป็นระเบียบและการแสดงผลที่เหมาะสมบนทุกขนาดหน้าจอ</p>
                 </div>
             </div>
         </section>
 
         <!-- Section 2: My Portfolio -->
         <section id="portfolio" class="mb-5">
-            <h2 class="h4 text-primary mb-4">My Portfolio Items</h2>
+            <h2 class="section-title h4 fw-bold mb-4">My Portfolio Items</h2>
             <div class="row g-4">
 
-                <!-- Portfolio Item 1: CS100 Mini Exercise / Worksheet -->
+                <!-- Portfolio Item 1: CS100 Assignment -->
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <span class="badge bg-secondary mb-2">Course Assignment</span>
-                            <h3 class="card-title h5">CS100 Mini Exercises & Worksheets</h3>
-                            <p class="text-muted small mb-2"><strong>Date:</strong> Sep 2026 | <strong>Role:</strong>
-                                Student / Developer</p>
-                            <p class="card-text"><strong>Description:</strong> แบบฝึกหัดและใบงานระหว่างเรียนรายวิชา
-                                CS100 ฝึกปฏิบัติการเขียนโค้ดและทำความเข้าใจโครงสร้างเว็บไซต์เบื้องต้น</p>
-                            <p class="card-text"><strong>Skills:</strong> HTML, CSS, Web Basics</p>
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden p-2">
+                        <div class="card-body p-4">
+                            <span class="badge badge-warm-primary mb-3 px-3 py-2 rounded-pill fw-semibold">Course
+                                Assignment</span>
+                            <h3 class="card-title h5 fw-bold mb-3">CS100 Mini Exercises & Worksheets</h3>
+                            <p class="text-muted small mb-3">📅 <strong>Date:</strong> Sep 2026 &nbsp;|&nbsp; 👤
+                                <strong>Role:</strong> Student / Developer
+                            </p>
+                            <p class="card-text text-secondary mb-3">แบบฝึกหัดและใบงานระหว่างเรียนรายวิชา CS100
+                                ฝึกปฏิบัติการเขียนโค้ดและทำความเข้าใจโครงสร้างเว็บไซต์เบื้องต้น</p>
+                            <p class="card-text small mb-4"><strong>Skills:</strong> HTML, CSS, Web Basics</p>
 
-                            <hr>
-                            <h6 class="text-dark small fw-bold">Reflection:</h6>
-                            <ul class="small ps-3 mb-3">
-                                <li><strong>What I did:</strong> ฝึกทำแบบฝึกหัดและสร้างหน้าเว็บย่อยตามโจทย์รายสัปดาห์
-                                </li>
-                                <li><strong>What I learned:</strong> เข้าใจแท็ก HTML พื้นฐานและการจัดแต่งสไตล์ด้วย CSS
-                                </li>
-                                <li><strong>Challenge:</strong> ในช่วงแรกยังสับสนเรื่องการจัด Layout
-                                    แต่แก้ไขโดยการทบทวนเอกสารประกอบการสอน</li>
-                                <li><strong>Next step:</strong> อยากพัฒนาทักษะการทำ Responsive Design ให้คล่องแคล่วขึ้น
-                                </li>
-                            </ul>
-                            <p class="small mb-0"><strong>Evidence:</strong> <a href="#" target="_blank">GitHub
-                                    Repository / File</a></p>
+                            <div class="reflection-box p-3 rounded-3 mb-4">
+                                <h6 class="text-dark fw-bold small mb-2">Reflection:</h6>
+                                <ul class="small text-secondary ps-3 mb-0">
+                                    <li><strong>What I did:</strong> ฝึกสร้างหน้าเว็บย่อยตามโจทย์รายสัปดาห์</li>
+                                    <li><strong>What I learned:</strong> เข้าใจแท็ก HTML และการจัดสไตล์ด้วย CSS</li>
+                                    <li><strong>Challenge:</strong> จัดการเรื่อง Layout แต่แก้ไขด้วยการทบทวนบทเรียน</li>
+                                    <li><strong>Next step:</strong> พัฒนาทักษะ Responsive Design ให้ดียิ่งขึ้น</li>
+                                </ul>
+                            </div>
+
+                            <a href="#" target="_blank"
+                                class="btn btn-warm-outline btn-sm rounded-pill px-4 fw-medium">🔗 ดูหลักฐาน (GitHub /
+                                File)</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Portfolio Item 2: Activity / Workshop -->
+                <!-- Portfolio Item 2: Activity -->
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <span class="badge bg-success mb-2">Activity</span>
-                            <h3 class="card-title h5">Tech Workshop / IT Activity</h3>
-                            <p class="text-muted small mb-2"><strong>Date:</strong> Oct 2026 | <strong>Role:</strong>
-                                Participant</p>
-                            <p class="card-text"><strong>Description:</strong>
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden p-2">
+                        <div class="card-body p-4">
+                            <span
+                                class="badge badge-warm-success mb-3 px-3 py-2 rounded-pill fw-semibold">Activity</span>
+                            <h3 class="card-title h5 fw-bold mb-3">Tech Workshop / IT Activity</h3>
+                            <p class="text-muted small mb-3">📅 <strong>Date:</strong> Oct 2026 &nbsp;|&nbsp; 👤
+                                <strong>Role:</strong> Participant
+                            </p>
+                            <p class="card-text text-secondary mb-3">
                                 เข้าร่วมกิจกรรมอบรมหรือสัมมนาเสริมทักษะด้านเทคโนโลยี
                                 เพื่อเปิดมุมมองใหม่เกี่ยวกับการพัฒนาซอฟต์แวร์</p>
-                            <p class="card-text"><strong>Skills:</strong> Communication, Technology Awareness</p>
+                            <p class="card-text small mb-4"><strong>Skills:</strong> Communication, Technology Awareness
+                            </p>
 
-                            <hr>
-                            <h6 class="text-dark small fw-bold">Reflection:</h6>
-                            <ul class="small ps-3 mb-3">
-                                <li><strong>What I did:</strong> เข้าร่วมรับฟังการบรรยายและทำกิจกรรมกลุ่มร่วมกับเพื่อนๆ
-                                </li>
-                                <li><strong>What I learned:</strong>
-                                    ได้เห็นภาพการทำงานจริงในสายงานเทคโนโลยีและการสื่อสารในทีม</li>
-                                <li><strong>Challenge:</strong> เนื้อหาบางส่วนมีความก้าวหน้าสูง
-                                    จึงต้องจดบันทึกและค้นคว้าข้อมูลเพิ่ม</li>
-                                <li><strong>Next step:</strong> สนใจศึกษาต่อยอดในหัวข้อเครื่องมือพัฒนาเว็บที่ทันสมัยขึ้น
-                                </li>
-                            </ul>
-                            <p class="small mb-0"><strong>Evidence:</strong> <a href="#" target="_blank">Certificate /
-                                    Screenshot</a></p>
+                            <div class="reflection-box p-3 rounded-3 mb-4">
+                                <h6 class="text-dark fw-bold small mb-2">Reflection:</h6>
+                                <ul class="small text-secondary ps-3 mb-0">
+                                    <li><strong>What I did:</strong> เข้าร่วมรับฟังบรรยายและทำกิจกรรมกลุ่ม</li>
+                                    <li><strong>What I learned:</strong> เห็นภาพการทำงานจริงและการสื่อสารในทีม</li>
+                                    <li><strong>Challenge:</strong> เนื้อหาก้าวหน้า จึงต้องจดบันทึกและค้นคว้าเพิ่ม</li>
+                                    <li><strong>Next step:</strong> สนใจศึกษาเครื่องมือพัฒนาเว็บที่ทันสมัยขึ้น</li>
+                                </ul>
+                            </div>
+
+                            <a href="#" target="_blank"
+                                class="btn btn-warm-outline btn-sm rounded-pill px-4 fw-medium">🔗 ดูหลักฐาน
+                                (Certificate)</a>
                         </div>
                     </div>
                 </div>
@@ -112,12 +126,4 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0 small">&copy; 2026 พันธุ์พิศิษฐ์ ศิริขันแสง | CS100 Portfolio</p>
-    </footer>
-
-    <!-- Bootstrap JS Bundle CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>S
+    <footer class="bg-warm-
